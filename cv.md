@@ -45,4 +45,4 @@ function greet() {
 
 ---
 ### English:
-[C2 according to EF Standart English Test](https://www.efset.org/cert/bbeJ7q) but I have little "speaking" experience, so it will obviusly be less
+[C2 according to EF Standart English Test](https://www.efset.org/cert/bbeJ7q) but I have little "speaking" experience, so it will obviously be less
