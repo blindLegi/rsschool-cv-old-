@@ -1,4 +1,5 @@
 ## Aleksei Skiruha
+![it's me](https://avatars.githubusercontent.com/u/90132401?v=4)
 ### Contact information:
 Phone: +375298380900\
 Email: alekse.skiruha@gmail.com\
