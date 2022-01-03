@@ -1,5 +1,180 @@
-.test {
-    color: blueviolet;
-    background-color: aliceblue;
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url(assets/font/LibreBaskerville-Bold.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url(assets/font/LibreBaskerville-Regular.ttf);
+    font-weight: 100;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    color: #760094;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'LibreBaskerville';
+    background: #d2fffe;
+}
+
+.header {
+    border: 10px solid #ffd700;
+    border-bottom: none;
     text-align: center;
+}
+
+.section-title {
+    margin: 0;
+    padding: 0;
+    background-color: #ffd700;
+    text-align: center;
+}
+
+.photo {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+}
+
+.main {
+    border: 10px solid #ffd700;
+}
+
+.container {
+    max-width: 1440px;
+    
+}
+
+.main-container {
+    display: flex;
+    padding: 0;    
+}
+
+@media (max-width: 800px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .nav-list {
+        flex-wrap: wrap;
+    }
+}
+
+.aside {
+    min-width: 400px;
+    border-right: 10px solid #ffd700;
+}
+
+.about-sector {
+    flex-grow: 1;
+}
+
+.foot-container {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 10px solid #ffd700;
+    border-top: none;
+   
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    color: #760094;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.nav-link:hover {
+    border: 2px solid #760094;
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 1px 1px;
+}
+
+p {
+    font-weight: 100;
+}
+
+.link {
+    color: #760094;
+    transition: .3s;
+}
+
+.link:hover {
+    cursor: pointer;
+    background: #baffac;
+}
+
+.pic {
+    transition: .3s;
+}
+
+.pic:hover {
+    background: #d9ffd2;
+    border-radius: 10px;
+}
+
+.profile-list {
+    padding: 0;
+    list-style: none;
+    font-size: larger;
+}
+
+.list {
+    list-style: none;
+    margin: 0 auto;
+    font-weight: 100;
+}
+
+.logo {
+    width: 150px;
+    height: 80px;
+    transition: 1s;
+}
+
+.logo:hover {
+    cursor: pointer;
+    border: 5px ridge #000000;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+ul {
+    padding: 20px 40px;
+}
+
+.text {
+    padding: 0 40px;
+}
+
+.year {
+    color: #000000;
 }
