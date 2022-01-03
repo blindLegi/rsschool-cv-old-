@@ -33,12 +33,11 @@ body {
 }
 
 .header {
-    border: 5px solid red;
+    background-color: #90efff;
     text-align: center;
 }
 
-.main {
-    border: 5px solid green;
+.section-title {
     text-align: center;
 }
 
@@ -49,23 +48,48 @@ body {
 }
 
 .footer {
-    border: 5px solid blue;
-    text-align: center;
+    background-color: #90efff;
 }
 
 .container {
     max-width: 1440px;
-    margin: 0 auto;
+    
 }
 
 .main-container {
     display: flex;
-    flex-wrap: wrap;
+    padding: 0;    
+}
+
+@media (max-width: 800px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .nav-list {
+        flex-wrap: wrap;
+    }
+}
+
+.aside {
+    min-width: 400px;
+    background-color: #fff990;
+}
+
+.about-section {
+    background-color: #7b68ee;
+}
+
+.foot-container {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
 }
 
 .nav-list {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     list-style: none;
 }
@@ -75,29 +99,70 @@ body {
     line-height: 50px;
     text-decoration: none;
     cursor: pointer;
-    color: #7b68ee;
-    transition: .3s, color 0.5s;
+    transition: .5s, color 0.5s;
 }
 
 .nav-link:hover {
-    color: #4d2323
-}
-
-.section {
-    width: 50%;
-}
-
-@media (max-width: 768px) {
-    .section {
-        width: 100%;
-    }
+    color: #7b68ee;
+    border: 2px solid #7b68ee;
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 1px 1px;
 }
 
 p {
     font-weight: 100;
 }
+.link {
+    transition: .3s;
+}
+
+.link:hover {
+    cursor: pointer;
+    background: gold;
+}
+
+.pic {
+    transition: .3s;
+}
+
+.pic:hover {
+    background: gold;
+    border-radius: 10px;
+}
+
+.profile-list {
+    
+    padding: 0;
+    list-style: none;
+    font-size: larger;
+}
 
 .list {
     list-style: none;
+    margin: 0 auto;
     font-weight: 100;
+}
+
+.logo {
+    width: 150px;
+    height: 80px;
+    background: #90efff;
+    transition: 1s, color 1s;
+}
+
+.logo:hover {
+    cursor: pointer;
+    border: 10px ridge #90efff;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+#about {
+    padding: 0 40px;
+}
+
+#english {
+    padding: 0 40px;
 }
