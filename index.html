@@ -31,7 +31,7 @@
                     <h1 class="section-title">Aleksei Skiruha</h1>
                     <ul class="profile-list">
                         <li><img class="photo" src="assets/img/myphoto.jpg" alt="my photo"></li>
-                        <li>Courier driver</li>
+                        <li>Driver</li>
                     </ul>
                 </section>
                 <section class="section" id="contacts">
@@ -58,7 +58,7 @@
             <div class="about-section">
                 <section class="section" id="about">
                     <h2 class="section-title">About me</h2>
-                    <p>Hello from Minsk! I have lived here since I went to university. I graduated from Belarusion National Technical University with a bachelor's degree in foundary production of ferrous and non-ferrous metals. In the last years of my studies, I got a part-time job as a courier driver. After that I was taken into military service for a year. The time I spent there...was fun! It was there that i began to think about moving into IT. And the last confirmation of this idea I received when I could not find a decent job in my specialty. But I still needed a job to live, so I went back to being a courier driver and started choosing what I wanted to do in programming. I decided to try Frontend and found rs school. So here I am - want to learn JavaScript (and all other stuff that needed along the way) and end my career as a driver.</p>
+                    <p class="text">Hello from Minsk! I have lived here since I went to university. I graduated from Belarusion National Technical University with a bachelor's degree in foundary production of ferrous and non-ferrous metals. In the last years of my studies, I got a part-time job as a courier driver. After that I was taken into military service for a year. The time I spent there...was fun! It was there that i began to think about moving into IT. And the last confirmation of this idea I received when I could not find a decent job in my specialty. But I still needed a job to live, so I went back to being a courier driver and started choosing what I wanted to do in programming. I decided to try Frontend and found rs school. So here I am - want to learn JavaScript (and all other stuff that needed along the way) and end my career as a driver.</p>
                 </section>
                 <section class="section" id="skills">
                     <h2 class="section-title">Skills</h2>
@@ -80,15 +80,26 @@
                 <section class="section" id="code">
                     <h2 class="section-title">Code example</h2>
                     <pre>
-                        <code>var x = 'hello world!'
-                        function greet() {
-                        return x
+                        <code>const slides = document.querySelectorAll('.slide')
+
+                            for (const slide of slides) {
+                                slide.addEventListener('click', ()=> {
+                                   clearActiveClasses() 
+                                    slide.classList.add('active')
+                                })
+                            }
+                            
+                            function clearActiveClasses() {
+                                slides.forEach((slide) => {
+                                    slide.classList.remove('active')
+                                })
+                            }
                         }</code>
                     </pre>
                 </section>
                 <section class="section" id="english">
                     <h2 class="section-title">English</h2>
-                    <p><a class="link" href="https://www.efset.org/cert/bbeJ7q">C2 according to EF Standart English Test</a> but I have little "speaking" experience, so it will obviously be less</p>
+                    <p class="text"><a class="link" href="https://www.efset.org/cert/bbeJ7q">C2 according to EF Standart English Test</a> but I have little "speaking" experience, so it will obviously be less</p>
                 </section>
             </div>
         </div>

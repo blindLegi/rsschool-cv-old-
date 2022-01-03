@@ -16,6 +16,7 @@
 
 html {
     scroll-behavior: smooth;
+    color: #760094;
 }
 
 a {
@@ -30,14 +31,19 @@ body {
     flex-direction: column;
     justify-content: space-between;
     font-family: 'LibreBaskerville';
+    background: #d2fffe;
 }
 
 .header {
-    background-color: #90efff;
+    border: 10px solid #ffd700;
+    border-bottom: none;
     text-align: center;
 }
 
 .section-title {
+    margin: 0;
+    padding: 0;
+    background-color: #ffd700;
     text-align: center;
 }
 
@@ -47,8 +53,8 @@ body {
     border-radius: 150px;
 }
 
-.footer {
-    background-color: #90efff;
+.main {
+    border: 10px solid #ffd700;
 }
 
 .container {
@@ -72,11 +78,11 @@ body {
 
 .aside {
     min-width: 400px;
-    background-color: #fff990;
+    border-right: 10px solid #ffd700;
 }
 
-.about-section {
-    background-color: #7b68ee;
+.about-sector {
+    flex-grow: 1;
 }
 
 .foot-container {
@@ -84,6 +90,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 10px solid #ffd700;
+    border-top: none;
    
 }
 
@@ -97,14 +105,14 @@ body {
 .nav-link {
     padding: 0 20px;
     line-height: 50px;
+    color: #760094;
     text-decoration: none;
     cursor: pointer;
-    transition: .5s, color 0.5s;
+    transition: .5s;
 }
 
 .nav-link:hover {
-    color: #7b68ee;
-    border: 2px solid #7b68ee;
+    border: 2px solid #760094;
     border-radius: 20px;
     box-shadow: inset 1px 1px 1px 1px;
 }
@@ -112,13 +120,15 @@ body {
 p {
     font-weight: 100;
 }
+
 .link {
+    color: #760094;
     transition: .3s;
 }
 
 .link:hover {
     cursor: pointer;
-    background: gold;
+    background: #baffac;
 }
 
 .pic {
@@ -126,12 +136,11 @@ p {
 }
 
 .pic:hover {
-    background: gold;
+    background: #d9ffd2;
     border-radius: 10px;
 }
 
 .profile-list {
-    
     padding: 0;
     list-style: none;
     font-size: larger;
@@ -146,23 +155,26 @@ p {
 .logo {
     width: 150px;
     height: 80px;
-    background: #90efff;
-    transition: 1s, color 1s;
+    transition: 1s;
 }
 
 .logo:hover {
     cursor: pointer;
-    border: 10px ridge #90efff;
+    border: 5px ridge #000000;
 }
 
 .profile-section {
     text-align: center;
 }
 
-#about {
+ul {
+    padding: 20px 40px;
+}
+
+.text {
     padding: 0 40px;
 }
 
-#english {
-    padding: 0 40px;
+.year {
+    color: #000000;
 }
