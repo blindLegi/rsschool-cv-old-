@@ -79,22 +79,22 @@
                 </section>
                 <section class="section" id="code">
                     <h2 class="section-title">Code example</h2>
-                    <pre>
-                        <code>const slides = document.querySelectorAll('.slide')
+                    <pre class="code">
+                        <code>
+ const slides = document.querySelectorAll<br class="br"> ('.slide')
 
-                            for (const slide of slides) {
-                                slide.addEventListener('click', ()=> {
-                                   clearActiveClasses() 
-                                    slide.classList.add('active')
-                                })
-                            }
-                            
-                            function clearActiveClasses() {
-                                slides.forEach((slide) => {
-                                    slide.classList.remove('active')
-                                })
-                            }
-                        }
+ for (const slide of slides) {
+    slide.addEventListener('click', ()=> {
+    clearActiveClasses() 
+    slide.classList.add('active')
+    })
+ }
+ 
+ function clearActiveClasses() {
+    slides.forEach((slide) => {
+    slide.classList.remove('active')
+    })
+ }
                         </code>
                     </pre>
                 </section>
