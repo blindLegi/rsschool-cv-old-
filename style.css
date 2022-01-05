@@ -84,11 +84,30 @@ body {
     list-style: none;
 }
 
+.nav-item {
+    padding: 0 20px;
+
+    line-height: 50px;
+    font-size: 20px;
+    white-space: nowrap;
+
+    color: #760094;
+
+    transition: .5s;
+}
+
+.nav-item:hover {
+    background: #baffac;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
 .br {
     display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .main-container {
         flex-direction: column;
     }
@@ -96,6 +115,10 @@ body {
     .nav-list {
         flex-direction: column;
         justify-content: center;
+    }
+
+    .nav-item {
+        line-height: 30px;
     }
 
     .aside {
@@ -120,25 +143,6 @@ body {
     border: 10px solid #ffd700;
     border-top: none;
    
-}
-
-.nav-item {
-    padding: 0 20px;
-
-    line-height: 50px;
-    font-size: 20px;
-    white-space: nowrap;
-
-    color: #760094;
-
-    transition: .5s;
-}
-
-.nav-item:hover {
-    background: #baffac;
-    border-radius: 20px;
-
-    cursor: pointer;
 }
 
 .link {
