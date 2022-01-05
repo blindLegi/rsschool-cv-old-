@@ -44,7 +44,7 @@ body {
 
 .section-title {
     margin: 0 auto;
-    padding: 0;
+    padding: 10px;
     
     text-align: center;
 
@@ -158,6 +158,8 @@ body {
 }
 
 .pic {
+    height: 25px;
+
     transition: .3s;
 }
 
@@ -180,12 +182,13 @@ body {
 
     font-weight: 100;
 
+    line-height: 168%;
     list-style: none;
 }
 
 .logo {
-    width: 140px;
-    height: 70px;
+    width: 81px;
+    height: auto;
 
     transition: 1s;
 }
