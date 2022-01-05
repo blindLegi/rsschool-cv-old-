@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url(assets/font/LibreBaskerville-Bold.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url(assets/font/LibreBaskerville-Regular.ttf);
+    font-weight: 100;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: #760094;
+
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'LibreBaskerville';
+
+    background: #d2fffe;
+}
+
+.header {
+    border: 10px solid #ffd700;
+    border-bottom: none;
+}
+
+.section-title {
+    margin: 0 auto;
+    padding: 0;
+    
+    text-align: center;
+
+    background-color: #ffd700;
+}
+
+.photo {
+    height: 300px;
+    width: 300px;
+}
+
+.main {
+    border: 10px solid #ffd700;
+    border-top: none;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+.main-container {
+    display: flex;
+    padding: 0;    
+}
+
+.aside {
+    border-right: 10px solid #ffd700;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+
+    list-style: none;
+}
+
+.nav-item {
+    padding: 0 20px;
+
+    line-height: 50px;
+    font-size: 20px;
+    white-space: nowrap;
+
+    color: #760094;
+
+    transition: .5s;
+}
+
+.nav-item:hover {
+    background: #baffac;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+.br {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-item {
+        line-height: 30px;
+    }
+
+    .aside {
+        border-right: none;
+    }
+
+    .br {
+        display: inline;
+    }
+}
+
+.about-sector {
+    flex-grow: 1;
+}
+
+.foot-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
+    border: 10px solid #ffd700;
+    border-top: none;
+   
+}
+
+.link {
+    color: #760094;
+
+    transition: .3s;
+}
+
+.link:hover {
+    background: #baffac;
+
+    cursor: pointer;
+}
+
+.pic {
+    transition: .3s;
+}
+
+.pic:hover {
+    background: #d9ffd2;
+    border-radius: 10px;
+}
+
+.profile-list {
+    padding: 0 10px;
+
+    font-size: larger;
+
+    list-style: none;
+}
+
+.list {
+    margin: 0 auto;
+    padding: 20px 10px;
+
+    font-weight: 100;
+
+    list-style: none;
+}
+
+.logo {
+    width: 140px;
+    height: 70px;
+
+    transition: 1s;
+}
+
+.logo:hover {
+    border: 5px ridge #000000;
+
+    cursor: pointer;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.code {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.text {
+    padding: 0 10px;
+    
+    font-weight: 100;
+}
+
+.year {
+    color: #000000;
+}
